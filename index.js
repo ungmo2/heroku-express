@@ -18,6 +18,10 @@ app.get('/cool', function(request, response) {
   response.send(cool());
 });
 
+app.get('/sayhi', function(request, response) {
+  response.send('Hi!');
+});
+
 app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
 });
