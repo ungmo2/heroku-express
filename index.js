@@ -19,7 +19,7 @@ app.get('/cool', function(request, response) {
 });
 
 app.get('/sayhi', function(request, response) {
-  response.send('Hi!');
+  response.send('Hi!!');
 });
 
 app.listen(app.get('port'), function() {
