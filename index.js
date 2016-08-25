@@ -13,7 +13,7 @@ app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 
 // CONNECT TO MONGODB SERVER
-mongoose.connect(process.env.PROD_MONGODB);
+mongoose.connect(process.env.MONGODB_URI);
 
 // DEFINE MODEL
 var Books = require('./models/books');
