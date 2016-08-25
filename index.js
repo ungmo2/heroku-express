@@ -13,14 +13,7 @@ app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 
 // CONNECT TO MONGODB SERVER
-var db = mongoose.connection;
-db.on('error', console.error);
-db.once('open', function(){
-  // CONNECTED TO MONGODB SERVER
-  console.log("Connected to mongod server");
-});
-
-mongoose.connect(process.env.MONGODB_CONNECT);
+mongoose.connect(process.env.PROD_MONGODB);
 
 // DEFINE MODEL
 var Books = require('./models/books');
