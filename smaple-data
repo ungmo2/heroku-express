@@ -1,0 +1,5 @@
+db.books.insert([
+  { title: "Example1", author: "Lee", price: 100 },
+  { title: "Example2", author: "Kim", price: 200 },
+  { title: "Example3", author: "Choi", price: 300 },
+  { title: "Example4", author: "Park", price: 400 }])
